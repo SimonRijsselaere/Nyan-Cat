@@ -1,0 +1,19 @@
+button {
+  display: block;
+  margin: auto;
+  margin-top: 300px;
+}
+
+.nyan-cat {
+  transition: 3s;
+}
+
+.nyan-cat-start {
+  left:0;
+  top:0;
+}
+
+.nyan-cat-end {
+  left:100vw;
+  top:100vh;
+}
