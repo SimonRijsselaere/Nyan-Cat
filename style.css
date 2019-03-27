@@ -1,11 +1,11 @@
 button {
   display: block;
   margin: auto;
-  margin-top: 300px;
 }
 
 .nyan-cat {
   transition: 3s;
+  position: absolute;
 }
 
 .nyan-cat-start {
@@ -16,4 +16,9 @@ button {
 .nyan-cat-end {
   left:100vw;
   top:100vh;
+}
+
+@keyframes mymove {
+  from {left:0; top:0;}
+  to {left:100vw; top:100vh;}
 }
