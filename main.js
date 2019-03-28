@@ -17,7 +17,7 @@ nyan.addEventListener("click", addNyan);
 
 function addNyan() {
 
-  var myVar = setInterval(myTimer, 1000);
+  var myVar = setInterval(myTimer, 100);
 
 
   function myTimer(){
@@ -28,6 +28,10 @@ function addNyan() {
 
       imageNyan.classList.add('nyan-cat-start');
       imageNyan.classList.add('nyan-cat');
+
+      var random = document.getElementsByClassName("nyan-cat");
+
+
 
       document.body.style.backgroundImage = "url('nyanCatBackground.gif')";
       document.body.style.backgroundSize = '30vh';
@@ -44,7 +48,7 @@ function addNyan() {
     clearInterval(myVar);
     document.body.style.backgroundImage = "";
     nyan.style.display = "block";
-  }, 5000);
+  }, 10000);
 
 
 }
